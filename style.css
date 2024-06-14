@@ -1,0 +1,82 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  background-color: gray;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+/*solution starts here*/
+/*selecting paragraph image and using the css below we can set the float to left so it wraps with the p text, 
+margin is set to 50px to push the text on the righ to add space*/
+.tile-image{
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+/*targets the .left class of div to float the whole card to the left*/
+
+.left {
+  float: left;
+  
+/*targets the .right class of div to float the whole card to the left*/
+
+}
+.right{
+  float: right;
+}
+
+/*targets the whole .card class of div and set the width to 45%, 
+setting the width to 50% will look odd and wont leave enough space for it to look good*/
+
+.card{
+  width: 50%;
+}
+
+/*targets the whole span element in div and set text color to midnight blue*/
+span{
+  color: midnightblue;
+}
+/*This is where we can modify the breakpoint at a certain pixel using media query*/
+
+@media (max-width: 600px){
+  .card img{
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+    
+  }
+/*This is where we can modify the breakpoint at a certain pixel using media query*/
+  
+  .card{
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
+/*This is where we can modify the breakpoint at a certain pixel using media query*/
+
+  h1{
+    font-size: 4rem;
+    text-align: center;
+  }
+/*This is where we can modify the breakpoint at a certain pixel using media query*/
+
+  .logo{
+    width: 100px;
+  }
+}
